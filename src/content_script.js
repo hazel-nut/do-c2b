@@ -31,6 +31,9 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 	v = v.replace(/\bDigital Ocean\b/g, "DigitalOcean (they got it wrong!)");
+	v = v.replace(/\bdigital ocean\b/g, "DigitalOcean (they got it wrong!)");
+	v = v.replace(/\bdigital Ocean\b/g, "DigitalOcean (they got it wrong!)");
+	v = v.replace(/\bDigital ocean\b/g, "DigitalOcean (they got it wrong!)");
 	textNode.nodeValue = v;
 }
 
