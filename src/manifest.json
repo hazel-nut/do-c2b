@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "It's DigitalOcean!",
+	"version": "1.0",
+	"description": "Replaces 'Digital Ocean' with 'DigitalOcean'.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
