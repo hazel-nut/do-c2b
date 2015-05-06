@@ -30,7 +30,7 @@ function walk(node)
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-	v = v.replace(/\bDigital Ocean\b/g, "DigitalOcean");
+	v = v.replace(/\bDigital Ocean\b/g, "DigitalOcean (they got it wrong!)");
 	textNode.nodeValue = v;
 }
 
